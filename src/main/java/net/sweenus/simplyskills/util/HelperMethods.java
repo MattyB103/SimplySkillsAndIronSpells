@@ -446,6 +446,7 @@ public class HelperMethods {
             getCategory(new Identifier(specialisation)).get().erase(user);
         }
         getCategory(new Identifier("simplyskills:tree")).get().resetSkills(user);
+        getCategory(new Identifier("simplyskills:arcanemage")).get().resetSkills(user);
         Identifier ascendancyTree = new Identifier("simplyskills:ascendancy");
         if (getCategory(ascendancyTree).isPresent())
             getCategory(ascendancyTree).get().resetSkills(user);

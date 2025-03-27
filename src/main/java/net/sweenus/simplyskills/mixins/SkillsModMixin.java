@@ -42,7 +42,16 @@ public class SkillsModMixin {
             player.getWorld().playSoundFromEntity(null, player, sound,
                     SoundCategory.PLAYERS, 0.3f, (float) choose_pitch);
 
-            if (category.streamUnlockedSkills(player).count() > 40 && categoryId.equals(new Identifier("simplyskills:tree"))) {
+//            if (category.streamUnlockedSkills(player).count() > 40 && categoryId.equals(new Identifier("simplyskills:tree"))) {
+//                SkillsAPI.getCategory(new Identifier(SimplySkills.MOD_ID, "ascendancy"))
+//                        .ifPresent(ascendancy -> ascendancy.unlock(player));
+//            }
+
+            if (category.streamUnlockedSkills(player).count() > 0 &&
+                    (categoryId.equals(new Identifier("simplyskills:arcanemage")) ||
+                    categoryId.equals(new Identifier("simplyskills:tree"))
+                    )
+            ){
                 SkillsAPI.getCategory(new Identifier(SimplySkills.MOD_ID, "ascendancy"))
                         .ifPresent(ascendancy -> ascendancy.unlock(player));
             }

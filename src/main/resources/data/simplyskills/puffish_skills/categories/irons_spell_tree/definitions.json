@@ -1,0 +1,807 @@
+{
+    "spell_power+.01": {
+        "title": "+1% Spell Power",
+        "icon": {
+            "type": "texture",
+            "data": {
+                "item": "irons_spellbooks:hither_thither_wand"
+            }
+        },
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:spell_power",
+                    "operation": "multiply_base",
+                    "value": 0.01
+                }
+            }
+        ]
+    },"spell_power+.03": {
+        "title": "+3% Spell Power",
+        "icon": {
+            "type": "texture",
+            "data": {
+                "item": "irons_spellbooks:hither_thither_wand"
+            }
+        },
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:spell_power",
+                    "operation": "multiply_base",
+                    "value": 0.03
+                }
+            }
+        ]
+    },"mana_regen+.02": {
+        "title": "+2% Mana Regeneration",
+        "icon": {
+            "type": "texture",
+            "data": {
+                "item": "irons_spellbooks:amethyst_resonance_charm"
+            }
+        },
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:mana_regen",
+                    "operation": "multiply_base",
+                    "value": 0.02
+                }
+            }
+        ]
+    },
+    "mana_regen+.04": {
+        "title": "+4% Mana Regeneration",
+        "icon": {
+            "type": "texture",
+            "data": {
+                "item": "irons_spellbooks:amethyst_resonance_charm"
+            }
+        },
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:mana_regen",
+                    "operation": "multiply_base",
+                    "value": 0.04
+                }
+            }
+        ]
+    },
+    "max_mana+10": {
+        "title": "+10 Max Mana",
+        "icon": {
+            "type": "texture",
+            "data": {
+                "item": "irons_spellbooks:mana_ring"
+            }
+        },
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:max_mana",
+                    "operation": "addition",
+                    "value": 10
+                }
+            }
+        ]
+    },
+    "max_mana+25": {
+        "title": "+25 Max Mana",
+        "icon": {
+            "type": "texture",
+            "data": {
+                "item": "irons_spellbooks:mana_ring"
+            }
+        },
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:max_mana",
+                    "operation": "addition",
+                    "value": 25
+                }
+            }
+        ]
+    },
+    "max_mana+50": {
+        "title": "+50 Max Mana",
+        "icon": {
+            "type": "texture",
+            "data": {
+                "item": "irons_spellbooks:mana_ring"
+            }
+        },
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:max_mana",
+                    "operation": "addition",
+                    "value": 50
+                }
+            }
+        ]
+    },
+    "cooldown_reduction+0.05": {
+        "title": "+5% Cooldown Reduction",
+        "icon": {
+            "type": "texture",
+            "data": {
+                "item": "irons_spellbooks:cooldown_ring"
+            }
+        },
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:cooldown_reduction",
+                    "operation": "multiply_base",
+                    "value": 0.05
+                }
+            }
+        ]
+    },
+    "cooldown_reduction+0.10": {
+        "title": "+10% Cooldown Reduction",
+        "icon": {
+            "type": "texture",
+            "data": {
+                "item": "irons_spellbooks:cooldown_ring"
+            }
+        },
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:cooldown_reduction",
+                    "operation": "multiply_base",
+                    "value": 0.10
+                }
+            }
+        ]
+    },
+    "cast_time_reduction+0.5": {
+        "title": "+5% Cast Time Reduction",
+        "icon": {
+            "type": "texture",
+            "data": {
+                "item": "irons_spellbooks:cast_time_ring"
+            }
+        },
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:cast_time_reduction",
+                    "operation": "multiply_base",
+                    "value": 0.05
+                }
+            }
+        ]
+    },
+    "cooldown_reduction+0.1": {
+        "title": "+10% Cooldown Reduction",
+        "icon": {
+            "type": "texture",
+            "data": {
+                "item": "irons_spellbooks:cast_time_ring"
+            }
+        },
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:cast_time_reduction",
+                    "operation": "multiply_base",
+                    "value": 0.10
+                }
+            }
+        ]
+    },
+    "spell_resist+0.5": {
+        "title": "+5% Spell Resistance",
+        "icon": {
+            "type": "texture",
+            "data": {
+                "item": "irons_spellbooks:heavy_chain_necklace"
+            }
+        },
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:spell_resist",
+                    "operation": "multiply_base",
+                    "value": 0.05
+                }
+            }
+        ]
+    },
+    "spell_resist+0.10": {
+        "title": "+10% Spell Resistance",
+        "icon": {
+            "type": "texture",
+            "data": {
+                "item": "irons_spellbooks:heavy_chain_necklace"
+            }
+        },
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:spell_resist",
+                    "operation": "multiply_base",
+                    "value": 0.10
+                }
+            }
+        ]
+    },"summon_damage+0.5": {
+        "title": "+5% Summon Damage",
+        "icon": {
+            "type": "texture",
+            "data": {
+                "item": "irons_spellbooks:conjuerers_talisman"
+            }
+        },
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:summon_damage",
+                    "operation": "multiply_base",
+                    "value": 0.05
+                }
+            }
+        ]
+    },"summon_damage+0.10": {
+        "title": "+10% Summon Damage",
+        "icon": {
+            "type": "texture",
+            "data": {
+                "item": "irons_spellbooks:conjuerers_talisman"
+            }
+        },
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:summon_damage",
+                    "operation": "multiply_base",
+                    "value": 0.10
+                }
+            }
+        ]
+    },
+    "spell_crit_damage_additive+0.5%_add_10_mana": {
+		"title": {
+			"translate": "text.skills.spell_crit_damage_additive+0.5%.title"
+		},
+		"icon": {
+			"type": "texture",
+			"data": {
+				"texture": "simplyskills:textures/icons/alternate_reduced/spell_crit_damage_up.png"
+			}
+		},
+		"frame": {
+			"type": "texture",
+			"data": {
+				"unlocked": "simplyskills:textures/frames/unlocked.png",
+				"available": "simplyskills:textures/frames/available.png",
+				"locked": "simplyskills:textures/frames/locked.png",
+				"excluded": "simplyskills:textures/frames/excluded.png"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "spell_power:critical_damage",
+					"value": 0.005,
+					"operation": "multiply_base"
+				}
+			},
+            {
+				"type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:max_mana",
+                    "operation": "addition",
+                    "value": 10
+                }
+			}
+		],
+		"metadata": {
+			"icon": "rqo0c7vwsk2a3nwa"
+		}
+	},
+    "spell_crit_damage_additive+3%_add_25_mana": {
+		"title": {
+			"translate": "text.skills.spell_crit_damage_additive+1%.title"
+		},
+		"icon": {
+			"type": "texture",
+			"data": {
+				"texture": "simplyskills:textures/icons/alternate_reduced/spell_crit_damage_up.png"
+			}
+		},
+		"frame": {
+			"type": "texture",
+			"data": {
+				"unlocked": "simplyskills:textures/frames/unlocked.png",
+				"available": "simplyskills:textures/frames/available.png",
+				"locked": "simplyskills:textures/frames/locked.png",
+				"excluded": "simplyskills:textures/frames/excluded.png"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "spell_power:critical_damage",
+					"value": 0.03,
+					"operation": "multiply_base"
+				}
+			},
+            {
+				"type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:max_mana",
+                    "operation": "addition",
+                    "value": 25
+                }
+			}
+            
+		],
+		"metadata": {
+			"icon": "ndbvwssgm71d4mrt"
+		}
+	},
+    "spell_crit_damage_multi+5_add_50_mana%": {
+		"title": {
+			"translate": "text.skills.spell_crit_damage_multi+1%.title"
+		},
+		"icon": {
+			"type": "texture",
+			"data": {
+				"texture": "simplyskills:textures/icons/alternate_reduced/spell_crit_damage_up.png"
+			}
+		},
+		"frame": {
+			"type": "texture",
+			"data": {
+				"unlocked": "simplyskills:textures/frames/unlocked.png",
+				"available": "simplyskills:textures/frames/available.png",
+				"locked": "simplyskills:textures/frames/locked.png",
+				"excluded": "simplyskills:textures/frames/excluded.png"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "spell_power:critical_damage",
+					"value": 0.05,
+					"operation": "multiply_base"
+				}
+			},
+            {
+				"type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:max_mana",
+                    "operation": "addition",
+                    "value": 50
+                }
+			}
+		],
+		"metadata": {
+			"icon": "3klubholojfe7b4b"
+		}
+	},
+    "spell_crit_chance_additive+1_and_2%_mana_regen": {
+		"title": {
+			"translate": "text.skills.spell_crit_chance_additive+1%.title"
+		},
+		"icon": {
+			"type": "texture",
+			"data": {
+				"texture": "simplyskills:textures/icons/alternate_reduced/spell_crit_chance_up.png"
+			}
+		},
+		"frame": {
+			"type": "texture",
+			"data": {
+				"unlocked": "simplyskills:textures/frames/unlocked.png",
+				"available": "simplyskills:textures/frames/available.png",
+				"locked": "simplyskills:textures/frames/locked.png",
+				"excluded": "simplyskills:textures/frames/excluded.png"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "spell_power:critical_chance",
+					"value": 0.01,
+					"operation": "multiply_base"
+				}
+			},
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:mana_regen",
+                    "operation": "multiply_base",
+                    "value": 0.02
+                }
+            }
+		],
+		"metadata": {
+			"icon": "crxf72n60u7631vg"
+		}
+	},
+    "spell_crit_chance_additive+0.1%_and_0.5%_mana_regen": {
+		"title": {
+			"translate": "text.skills.spell_crit_chance_additive+0.1%.title"
+		},
+		"icon": {
+			"type": "texture",
+			"data": {
+				"texture": "simplyskills:textures/icons/alternate_reduced/spell_crit_chance_up.png"
+			}
+		},
+		"frame": {
+			"type": "texture",
+			"data": {
+				"unlocked": "simplyskills:textures/frames/unlocked.png",
+				"available": "simplyskills:textures/frames/available.png",
+				"locked": "simplyskills:textures/frames/locked.png",
+				"excluded": "simplyskills:textures/frames/excluded.png"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "spell_power:critical_chance",
+					"value": 0.001,
+					"operation": "multiply_base"
+				}
+			},
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:mana_regen",
+                    "operation": "multiply_base",
+                    "value": 0.005
+                }
+            }
+		],
+		"metadata": {
+			"icon": "9juql3f8jadtvo9f"
+		}
+	},
+    "spell_crit_chance_multi+1%_and_4%_mana_regen": {
+		"title": {
+			"translate": "text.skills.spell_crit_chance_multi+1%.title"
+		},
+		"icon": {
+			"type": "texture",
+			"data": {
+				"texture": "simplyskills:textures/icons/alternate_reduced/spell_crit_chance_up.png"
+			}
+		},
+		"frame": {
+			"type": "texture",
+			"data": {
+				"unlocked": "simplyskills:textures/frames/unlocked.png",
+				"available": "simplyskills:textures/frames/available.png",
+				"locked": "simplyskills:textures/frames/locked.png",
+				"excluded": "simplyskills:textures/frames/excluded.png"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "spell_power:critical_chance",
+					"value": 0.04,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "l0281xjb02yz2vv3"
+		}
+	},
+    "spell_haste_additive+1%": {
+		"title": {
+			"translate": "text.skills.spell_haste_additive+1%.title"
+		},
+		"icon": {
+			"type": "texture",
+			"data": {
+				"texture": "simplyskills:textures/icons/alternate_reduced/spell_haste_up.png"
+			}
+		},
+		"frame": {
+			"type": "texture",
+			"data": {
+				"unlocked": "simplyskills:textures/frames/unlocked.png",
+				"available": "simplyskills:textures/frames/available.png",
+				"locked": "simplyskills:textures/frames/locked.png",
+				"excluded": "simplyskills:textures/frames/excluded.png"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "spell_power:haste",
+					"value": 0.03,
+					"operation": "multiply_base"
+				}
+			},
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:cast_time_reduction",
+                    "operation": "multiply_base",
+                    "value": 0.03
+                }
+            }
+		],
+		"metadata": {
+			"icon": "5zzbk5jxp5ms3359"
+		}
+	},
+    "spell_haste_additive+0.5%": {
+		"title": {
+			"translate": "text.skills.spell_haste_additive+0.5%.title"
+		},
+		"icon": {
+			"type": "texture",
+			"data": {
+				"texture": "simplyskills:textures/icons/alternate_reduced/spell_haste_up.png"
+			}
+		},
+		"frame": {
+			"type": "texture",
+			"data": {
+				"unlocked": "simplyskills:textures/frames/unlocked.png",
+				"available": "simplyskills:textures/frames/available.png",
+				"locked": "simplyskills:textures/frames/locked.png",
+				"excluded": "simplyskills:textures/frames/excluded.png"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "spell_power:haste",
+					"value": 0.005,
+					"operation": "multiply_base"
+				}
+			},
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:cast_time_reduction",
+                    "operation": "multiply_base",
+                    "value": 0.005
+                }
+            }
+		],
+		"metadata": {
+			"icon": "619pp1orjgg5yg97"
+		}
+    },
+    "spell_haste_additive+1%": {
+		"title": {
+			"translate": "text.skills.spell_haste_additive+1%.title"
+		},
+		"icon": {
+			"type": "texture",
+			"data": {
+				"texture": "simplyskills:textures/icons/alternate_reduced/spell_haste_up.png"
+			}
+		},
+		"frame": {
+			"type": "texture",
+			"data": {
+				"unlocked": "simplyskills:textures/frames/unlocked.png",
+				"available": "simplyskills:textures/frames/available.png",
+				"locked": "simplyskills:textures/frames/locked.png",
+				"excluded": "simplyskills:textures/frames/excluded.png"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "spell_power:haste",
+					"value": 0.05,
+					"operation": "multiply_base"
+				}
+			},
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:cast_time_reduction",
+                    "operation": "multiply_base",
+                    "value": 0.05
+                }
+            }
+		],
+		"metadata": {
+			"icon": "5zzbk5jxp5ms3359"
+		}
+	},
+    "spell_power_additive": {
+		"title": {
+			"translate": "text.skills.spell_power_additive.title"
+		},
+		"icon": {
+			"type": "texture",
+			"data": {
+				"texture": "simplyskills:textures/icons/alternate_reduced/spell_power_up.png"
+			}
+		},
+		"frame": {
+			"type": "texture",
+			"data": {
+				"unlocked": "simplyskills:textures/frames/unlocked.png",
+				"available": "simplyskills:textures/frames/available.png",
+				"locked": "simplyskills:textures/frames/locked.png",
+				"excluded": "simplyskills:textures/frames/excluded.png"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "spell_power:healing",
+					"value": 0.03,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "spell_power:fire",
+					"value": 0.03,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "spell_power:arcane",
+					"value": 0.03,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "spell_power:frost",
+					"value": 0.03,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "spell_power:lightning",
+					"value": 0.03,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "spell_power:soul",
+					"value": 0.03,
+					"operation": "multiply_base"
+				}
+			},
+            {
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:spell_power",
+					"value": 0.03,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "yyb20gdlfncp3isy"
+		}
+	},
+    "spell_power_additive+0.5%": {
+		"title": {
+			"translate": "text.skills.spell_power_additive+0.5%.title"
+		},
+		"icon": {
+			"type": "texture",
+			"data": {
+				"texture": "simplyskills:textures/icons/alternate_reduced/spell_power_up.png"
+			}
+		},
+		"frame": {
+			"type": "texture",
+			"data": {
+				"unlocked": "simplyskills:textures/frames/unlocked.png",
+				"available": "simplyskills:textures/frames/available.png",
+				"locked": "simplyskills:textures/frames/locked.png",
+				"excluded": "simplyskills:textures/frames/excluded.png"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "spell_power:healing",
+					"value": 0.005,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "spell_power:fire",
+					"value": 0.005,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "spell_power:arcane",
+					"value": 0.005,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "spell_power:frost",
+					"value": 0.005,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "spell_power:lightning",
+					"value": 0.005,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "spell_power:soul",
+					"value": 0.005,
+					"operation": "multiply_base"
+				}
+			},
+            {
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:spell_power",
+					"value": 0.005,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "9bq8evhkc245kqqk"
+		}
+	},
+}

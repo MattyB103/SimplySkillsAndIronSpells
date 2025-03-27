@@ -1,0 +1,14 @@
+{
+	"oen4e1c5s99hwvkq": {
+		"definition": "pathInitiate",
+		"x": 0,
+		"y": 0,
+		"root": true
+	},
+	"vlnhmjqshjomxp9c": {
+		"definition": "spell_arcane_damage_additive+1%",
+		"x": 0,
+		"y": -32,
+		"root": false
+	}
+}
