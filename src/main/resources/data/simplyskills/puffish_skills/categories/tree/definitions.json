@@ -96,6 +96,14 @@
                     "value": 1,
                     "operation": "addition"
                 }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:cooldown_reduction",
+                    "operation": "multiply_base",
+                    "value": 0.10
+                }
             }
         ]
     },
@@ -121,6 +129,14 @@
                 "type": "puffish_skills:attribute",
                 "data": {
                     "attribute": "spell_power:fire",
+                    "value": 0.03,
+                    "operation": "multiply_base"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:fire_spell_power",
                     "value": 0.03,
                     "operation": "multiply_base"
                 }
@@ -152,6 +168,14 @@
                     "value": 0.008,
                     "operation": "multiply_base"
                 }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:fire_spell_power",
+                    "value": 0.008,
+                    "operation": "multiply_base"
+                }
             }
         ]
     },
@@ -177,6 +201,14 @@
                 "type": "puffish_skills:attribute",
                 "data": {
                     "attribute": "spell_power:fire",
+                    "value": 0.05,
+                    "operation": "multiply_base"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:fire_spell_power",
                     "value": 0.05,
                     "operation": "multiply_base"
                 }
@@ -208,6 +240,14 @@
                     "value": 0.03,
                     "operation": "multiply_base"
                 }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:ender_spell_power",
+                    "value": 0.03,
+                    "operation": "multiply_base"
+                }
             }
         ]
     },
@@ -233,6 +273,14 @@
                 "type": "puffish_skills:attribute",
                 "data": {
                     "attribute": "spell_power:arcane",
+                    "value": 0.008,
+                    "operation": "multiply_base"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:ender_spell_power",
                     "value": 0.008,
                     "operation": "multiply_base"
                 }
@@ -264,6 +312,14 @@
                     "value": 0.05,
                     "operation": "multiply_base"
                 }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:ender_spell_power",
+                    "value": 0.05,
+                    "operation": "multiply_base"
+                }
             }
         ]
     },
@@ -289,6 +345,14 @@
                 "type": "puffish_skills:attribute",
                 "data": {
                     "attribute": "spell_power:frost",
+                    "value": 0.03,
+                    "operation": "multiply_base"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:ice_spell_power",
                     "value": 0.03,
                     "operation": "multiply_base"
                 }
@@ -320,6 +384,14 @@
                     "value": 0.008,
                     "operation": "multiply_base"
                 }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:ice_spell_power",
+                    "value": 0.008,
+                    "operation": "multiply_base"
+                }
             }
         ]
     },
@@ -345,6 +417,14 @@
                 "type": "puffish_skills:attribute",
                 "data": {
                     "attribute": "spell_power:frost",
+                    "value": 0.05,
+                    "operation": "multiply_base"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:ice_spell_power",
                     "value": 0.05,
                     "operation": "multiply_base"
                 }
@@ -376,6 +456,14 @@
                     "value": 0.03,
                     "operation": "multiply_base"
                 }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:holy_spell_power",
+                    "value": 0.03,
+                    "operation": "multiply_base"
+                }
             }
         ]
     },
@@ -401,6 +489,14 @@
                 "type": "puffish_skills:attribute",
                 "data": {
                     "attribute": "spell_power:healing",
+                    "value": 0.008,
+                    "operation": "multiply_base"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:holy_spell_power",
                     "value": 0.008,
                     "operation": "multiply_base"
                 }
@@ -432,6 +528,14 @@
                     "value": 0.05,
                     "operation": "multiply_base"
                 }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:holy_spell_power",
+                    "value": 0.05,
+                    "operation": "multiply_base"
+                }
             }
         ]
     },
@@ -457,6 +561,14 @@
                 "type": "puffish_skills:attribute",
                 "data": {
                     "attribute": "spell_power:lightning",
+                    "value": 0.03,
+                    "operation": "multiply_base"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:lightning_spell_power",
                     "value": 0.03,
                     "operation": "multiply_base"
                 }
@@ -488,6 +600,14 @@
                     "value": 0.008,
                     "operation": "multiply_base"
                 }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:lightning_spell_power",
+                    "value": 0.008,
+                    "operation": "multiply_base"
+                }
             }
         ]
     },
@@ -513,6 +633,14 @@
                 "type": "puffish_skills:attribute",
                 "data": {
                     "attribute": "spell_power:lightning",
+                    "value": 0.05,
+                    "operation": "multiply_base"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:lightning_spell_power",
                     "value": 0.05,
                     "operation": "multiply_base"
                 }
@@ -545,6 +673,31 @@
                     "operation": "multiply_base"
                 }
             }
+            ,
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:blood_spell_power",
+                    "value": 0.03,
+                    "operation": "multiply_base"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:nature_spell_power",
+                    "value": 0.03,
+                    "operation": "multiply_base"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:evocation_spell_power",
+                    "value": 0.03,
+                    "operation": "multiply_base"
+                }
+            }
         ]
     },
     "spell_soul_damage_additive+0.8%": {
@@ -569,6 +722,30 @@
                 "type": "puffish_skills:attribute",
                 "data": {
                     "attribute": "spell_power:soul",
+                    "value": 0.008,
+                    "operation": "multiply_base"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:blood_spell_power",
+                    "value": 0.008,
+                    "operation": "multiply_base"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:nature_spell_power",
+                    "value": 0.008,
+                    "operation": "multiply_base"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:evocation_spell_power",
                     "value": 0.008,
                     "operation": "multiply_base"
                 }
@@ -600,6 +777,30 @@
                     "value": 0.05,
                     "operation": "multiply_base"
                 }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:blood_spell_power",
+                    "value": 0.05,
+                    "operation": "multiply_base"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:nature_spell_power",
+                    "value": 0.05,
+                    "operation": "multiply_base"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:evocation_spell_power",
+                    "value": 0.05,
+                    "operation": "multiply_base"
+                }
             }
         ]
     },
@@ -627,6 +828,14 @@
                     "attribute": "spell_power:critical_damage",
                     "value": 0.03,
                     "operation": "multiply_base"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:max_mana",
+                    "value": 25,
+                    "operation": "addition"
                 }
             }
         ]
@@ -656,6 +865,14 @@
                     "value": 0.005,
                     "operation": "multiply_base"
                 }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:max_mana",
+                    "value": 15,
+                    "operation": "addition"
+                }
             }
         ]
     },
@@ -684,6 +901,14 @@
                     "value": 0.05,
                     "operation": "multiply_base"
                 }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:max_mana",
+                    "value": 50,
+                    "operation": "addition"
+                }
             }
         ]
     },
@@ -710,6 +935,14 @@
                 "data": {
                     "attribute": "spell_power:critical_chance",
                     "value": 0.01,
+                    "operation": "multiply_base"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:mana_regen",
+                    "value": 0.02,
                     "operation": "multiply_base"
                 }
             }
@@ -740,6 +973,14 @@
                     "value": 0.001,
                     "operation": "multiply_base"
                 }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:mana_regen",
+                    "value": 0.01,
+                    "operation": "multiply_base"
+                }
             }
         ]
     },
@@ -768,6 +1009,14 @@
                     "value": 0.02,
                     "operation": "multiply_base"
                 }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:mana_regen",
+                    "value": 0.04,
+                    "operation": "multiply_base"
+                }
             }
         ]
     },
@@ -793,6 +1042,14 @@
                 "type": "puffish_skills:attribute",
                 "data": {
                     "attribute": "spell_power:haste",
+                    "value": 0.03,
+                    "operation": "multiply_base"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:cast_time_reduction",
                     "value": 0.03,
                     "operation": "multiply_base"
                 }
@@ -824,6 +1081,14 @@
                     "value": 0.005,
                     "operation": "multiply_base"
                 }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:cast_time_reduction",
+                    "value": 0.005,
+                    "operation": "multiply_base"
+                }
             }
         ]
     },
@@ -849,6 +1114,14 @@
                 "type": "puffish_skills:attribute",
                 "data": {
                     "attribute": "spell_power:haste",
+                    "value": 0.05,
+                    "operation": "multiply_base"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:cast_time_reduction",
                     "value": 0.05,
                     "operation": "multiply_base"
                 }
@@ -920,6 +1193,14 @@
                     "value": 0.03,
                     "operation": "multiply_base"
                 }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:spell_power",
+                    "value": 0.03,
+                    "operation": "multiply_base"
+                }
             }
         ]
     },
@@ -985,6 +1266,14 @@
                 "type": "puffish_skills:attribute",
                 "data": {
                     "attribute": "spell_power:soul",
+                    "value": 0.005,
+                    "operation": "multiply_base"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:spell_power",
                     "value": 0.005,
                     "operation": "multiply_base"
                 }
@@ -1102,6 +1391,14 @@
                     "value": 0.03,
                     "operation": "multiply_base"
                 }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:spell_resist",
+                    "value": 0.03,
+                    "operation": "multiply_base"
+                }
             }
         ]
     },
@@ -1130,7 +1427,16 @@
                     "value": 0.005,
                     "operation": "multiply_base"
                 }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:spell_resist",
+                    "value": 0.005,
+                    "operation": "multiply_base"
+                }
             }
+
         ]
     },
     "resistance_multi+2%": {
@@ -1155,6 +1461,14 @@
                 "type": "puffish_skills:attribute",
                 "data": {
                     "attribute": "puffish_skills:player.resistance",
+                    "value": 0.05,
+                    "operation": "multiply_base"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:spell_resist",
                     "value": 0.05,
                     "operation": "multiply_base"
                 }
@@ -2013,6 +2327,38 @@
             {
                 "type": "puffish_skills:attribute",
                 "data": {
+                    "attribute": "irons_spellbooks:cooldown_reduction",
+                    "value": 0.25,
+                    "operation": "multiply_base"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:max_mana",
+                    "value": 0.25,
+                    "operation": "multiply_total"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:mana_regen",
+                    "value": 0.25,
+                    "operation": "multiply_total"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "spell_power:critical_damage",
+                    "value": 0.75,
+                    "operation": "multiply_total"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
                     "attribute": "spell_power:soul",
                     "value": -0.25,
                     "operation": "multiply_total"
@@ -2054,6 +2400,78 @@
                 "type": "puffish_skills:attribute",
                 "data": {
                     "attribute": "spell_power:arcane",
+                    "value": -0.25,
+                    "operation": "multiply_total"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:blood_spell_power",
+                    "value": -0.25,
+                    "operation": "multiply_total"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:eldritch_spell_power",
+                    "value": -0.25,
+                    "operation": "multiply_total"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:ender_spell_power",
+                    "value": -0.25,
+                    "operation": "multiply_total"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:evocation_spell_power",
+                    "value": -0.25,
+                    "operation": "multiply_total"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:fire_spell_power",
+                    "value": -0.25,
+                    "operation": "multiply_total"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:holy_spell_power",
+                    "value": -0.25,
+                    "operation": "multiply_total"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:ice_spell_power",
+                    "value": -0.25,
+                    "operation": "multiply_total"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:lightning_spell_power",
+                    "value": -0.25,
+                    "operation": "multiply_total"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:nature_spell_power",
                     "value": -0.25,
                     "operation": "multiply_total"
                 }
@@ -2219,6 +2637,78 @@
                     "value": 0.05,
                     "operation": "multiply_total"
                 }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:blood_spell_power",
+                    "value": 0.05,
+                    "operation": "multiply_total"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:eldritch_spell_power",
+                    "value": 0.05,
+                    "operation": "multiply_total"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:ender_spell_power",
+                    "value": 0.05,
+                    "operation": "multiply_total"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:evocation_spell_power",
+                    "value": 0.05,
+                    "operation": "multiply_total"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:fire_spell_power",
+                    "value": 0.05,
+                    "operation": "multiply_total"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:holy_spell_power",
+                    "value": 0.05,
+                    "operation": "multiply_total"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:ice_spell_power",
+                    "value": 0.05,
+                    "operation": "multiply_total"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:lightning_spell_power",
+                    "value": 0.05,
+                    "operation": "multiply_total"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:nature_spell_power",
+                    "value": 0.05,
+                    "operation": "multiply_total"
+                }
             }
         ]
     },
@@ -2287,6 +2777,14 @@
                     "value": 0.05,
                     "operation": "multiply_total"
                 }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:cast_time_reduction",
+                    "value": 0.20,
+                    "operation": "multiply_base"
+                }
             }
         ]
     },
@@ -2314,6 +2812,14 @@
                 "type": "puffish_skills:passive_skill",
                 "data": {
                     "passive_skill": "cleric"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:holy_spell_power",
+                    "value": 0.50,
+                    "operation": "multiply_base"
                 }
             }
         ]
@@ -3895,6 +4401,14 @@
                     "attribute": "spell_power:healing",
                     "value": 1,
                     "operation": "addition"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "irons_spellbooks:holy_spell_power",
+                    "value": 0.50,
+                    "operation": "multiply_base"
                 }
             }
         ]
