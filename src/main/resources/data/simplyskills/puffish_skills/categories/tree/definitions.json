@@ -2351,14 +2351,6 @@
             {
                 "type": "puffish_skills:attribute",
                 "data": {
-                    "attribute": "spell_power:critical_damage",
-                    "value": 0.75,
-                    "operation": "multiply_total"
-                }
-            },
-            {
-                "type": "puffish_skills:attribute",
-                "data": {
                     "attribute": "spell_power:soul",
                     "value": -0.25,
                     "operation": "multiply_total"
