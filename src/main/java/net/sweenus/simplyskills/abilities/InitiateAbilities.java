@@ -17,6 +17,7 @@ import net.sweenus.simplyskills.SimplySkills;
 import net.sweenus.simplyskills.registry.EffectRegistry;
 import net.sweenus.simplyskills.util.HelperMethods;
 import net.sweenus.simplyskills.util.SkillReferencePosition;
+import net.sweenus.simplyskills.util.IronsSpellbooksHelper;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.ArrayList;
@@ -52,8 +53,11 @@ public class InitiateAbilities {
         int amplifier = SimplySkills.initiateConfig.passiveInitiateEmpowerStacks;
         int amplifierMax = SimplySkills.initiateConfig.passiveInitiateEmpowerMaxStacks;
         List<StatusEffect> list = new ArrayList<>();
-        if (school == SpellSchools.ARCANE || (schools != null ? schools.contains(SpellSchools.ARCANE) : false))
+        if (school == SpellSchools.ARCANE || (schools != null ? schools.contains(SpellSchools.ARCANE) : false)) {
+            if (IronsSpellbooksHelper.isIronsSpellbooksLoaded())
+                IronsSpellbooksHelper.addIronsSpellbooksSpellPowerAttributeEmpower(EffectRegistry.ARCANEATTUNEMENT, IronsSpellbooksHelper.ENDER_SPELL_POWER);
             list.add(EffectRegistry.ARCANEATTUNEMENT);
+        }
         if (school == SpellSchools.SOUL || (schools != null ? schools.contains(SpellSchools.SOUL) : false))
             list.add(EffectRegistry.SOULATTUNEMENT);
         if (school == SpellSchools.HEALING || (schools != null ? schools.contains(SpellSchools.HEALING) : false))
