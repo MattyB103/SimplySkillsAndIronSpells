@@ -1,5 +1,7 @@
 package net.sweenus.simplyskills.registry;
 
+import elocindev.eternal_attributes.EternalAttributes;
+import elocindev.eternal_attributes.registry.SpellSchoolRegistry;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
@@ -18,7 +20,6 @@ import net.spell_power.api.SpellSchools;
 import net.sweenus.simplyskills.SimplySkills;
 import net.sweenus.simplyskills.config.MiscConfig;
 import net.sweenus.simplyskills.effects.*;
-import net.sweenus.simplyskills.util.HelperMethods;
 
 public class EffectRegistry {
     public static double mightIncrease = 0.10;
@@ -76,6 +77,16 @@ public class EffectRegistry {
     public static StatusEffect HOLYATTUNEMENT= new HolyAttunementEffect(StatusEffectCategory.BENEFICIAL, 3124687)
             .addAttributeModifier(SpellSchools.HEALING.attribute,
                     "60125c3e-4980-4cc8-b54e-037b47185e2b",
+                    0.02,
+                    EntityAttributeModifier.Operation.MULTIPLY_TOTAL);
+    public static StatusEffect BLOODATTUNEMENT= new BloodAttunementEffect(StatusEffectCategory.BENEFICIAL, 3124687)
+            .addAttributeModifier(getEternalAtributesBlood(),
+                    "c2ca86e0-6823-4008-8f8c-e11d19f5547c",
+                    0.02,
+                    EntityAttributeModifier.Operation.MULTIPLY_TOTAL);
+    public static StatusEffect UNHOLYATTUNEMENT= new UnholyAttunementEffect(StatusEffectCategory.BENEFICIAL, 3124687)
+            .addAttributeModifier(getEternalAtributesUnholy(),
+                    "d1234874-442a-4812-8ec2-ccfeffcf058d",
                     0.02,
                     EntityAttributeModifier.Operation.MULTIPLY_TOTAL);
     public static StatusEffect PRECISION= new PrecisionEffect(StatusEffectCategory.BENEFICIAL, 3124687)
@@ -367,6 +378,8 @@ public class EffectRegistry {
         EARTHSHAKER = registerStatusEffect("earthshaker", EARTHSHAKER);
         ARCANEATTUNEMENT = registerStatusEffect("arcane_attunement", ARCANEATTUNEMENT);
         HOLYATTUNEMENT = registerStatusEffect("holy_attunement", HOLYATTUNEMENT);
+        BLOODATTUNEMENT = registerStatusEffect("blood_attunement", BLOODATTUNEMENT);
+        UNHOLYATTUNEMENT = registerStatusEffect("unholy_attunement", UNHOLYATTUNEMENT);
         SOULATTUNEMENT = registerStatusEffect("soul_attunement", SOULATTUNEMENT);
         FIREATTUNEMENT = registerStatusEffect("fire_attunement", FIREATTUNEMENT);
         FROSTATTUNEMENT = registerStatusEffect("frost_attunement", FROSTATTUNEMENT);
@@ -430,6 +443,22 @@ public class EffectRegistry {
             }
         }
 
+        return returnAttribute;
+    }
+
+    public static EntityAttribute getEternalAtributesBlood() {
+        EntityAttribute returnAttribute = SpellSchools.ARCANE.attribute;
+        if (FabricLoader.getInstance().isModLoaded("eternal_attributes")) {
+            returnAttribute = SpellSchoolRegistry.BLOOD.attribute;
+        }
+        return returnAttribute;
+    }
+
+    public static EntityAttribute getEternalAtributesUnholy() {
+        EntityAttribute returnAttribute = SpellSchools.ARCANE.attribute;
+        if (FabricLoader.getInstance().isModLoaded("eternal_attributes")) {
+            returnAttribute = SpellSchoolRegistry.UNHOLY.attribute;
+        }
         return returnAttribute;
     }
 

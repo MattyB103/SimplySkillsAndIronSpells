@@ -851,8 +851,14 @@ public class HelperMethods {
         }
     }
 
+
+
     public static boolean isOpacLoaded() {
         return FabricLoader.getInstance().isModLoaded("openpartiesandclaims");
+    }
+
+    public static boolean isEternalAttributesLoaded() {
+        return FabricLoader.getInstance().isModLoaded("eternal_attributes");
     }
 
 }

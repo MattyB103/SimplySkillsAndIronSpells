@@ -1,5 +1,6 @@
 package net.sweenus.simplyskills.abilities;
 
+import elocindev.eternal_attributes.registry.SpellSchoolRegistry;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttributes;
@@ -53,21 +54,75 @@ public class InitiateAbilities {
         int amplifier = SimplySkills.initiateConfig.passiveInitiateEmpowerStacks;
         int amplifierMax = SimplySkills.initiateConfig.passiveInitiateEmpowerMaxStacks;
         List<StatusEffect> list = new ArrayList<>();
+
         if (school == SpellSchools.ARCANE || (schools != null ? schools.contains(SpellSchools.ARCANE) : false)) {
-            if (IronsSpellbooksHelper.isIronsSpellbooksLoaded())
+            if (IronsSpellbooksHelper.isIronsSpellbooksLoaded()) {
                 IronsSpellbooksHelper.addIronsSpellbooksSpellPowerAttributeEmpower(EffectRegistry.ARCANEATTUNEMENT, IronsSpellbooksHelper.ENDER_SPELL_POWER);
+                IronsSpellbooksHelper.addIronsSpellbooksSpellPowerAttributeEmpower(EffectRegistry.ARCANEATTUNEMENT, IronsSpellbooksHelper.ELDRITCH_SPELL_POWER);
+            }
             list.add(EffectRegistry.ARCANEATTUNEMENT);
         }
-        if (school == SpellSchools.SOUL || (schools != null ? schools.contains(SpellSchools.SOUL) : false))
+
+        if (school == SpellSchools.SOUL || (schools != null ? schools.contains(SpellSchools.SOUL) : false)) {
+            if (IronsSpellbooksHelper.isIronsSpellbooksLoaded()) {
+                IronsSpellbooksHelper.addIronsSpellbooksSpellPowerAttributeEmpower(EffectRegistry.SOULATTUNEMENT, IronsSpellbooksHelper.BLOOD_SPELL_POWER);
+                IronsSpellbooksHelper.addIronsSpellbooksSpellPowerAttributeEmpower(EffectRegistry.SOULATTUNEMENT, IronsSpellbooksHelper.NATURE_SPELL_POWER);
+                IronsSpellbooksHelper.addIronsSpellbooksSpellPowerAttributeEmpower(EffectRegistry.SOULATTUNEMENT, IronsSpellbooksHelper.EVOCATION_SPELL_POWER);
+            }
             list.add(EffectRegistry.SOULATTUNEMENT);
-        if (school == SpellSchools.HEALING || (schools != null ? schools.contains(SpellSchools.HEALING) : false))
+        }
+
+        if (school == SpellSchools.HEALING || (schools != null ? schools.contains(SpellSchools.HEALING) : false)) {
+            if (IronsSpellbooksHelper.isIronsSpellbooksLoaded()) {
+                IronsSpellbooksHelper.addIronsSpellbooksSpellPowerAttributeEmpower(EffectRegistry.HOLYATTUNEMENT, IronsSpellbooksHelper.HOLY_SPELL_POWER);
+                IronsSpellbooksHelper.addIronsSpellbooksSpellPowerAttributeEmpower(EffectRegistry.HOLYATTUNEMENT, IronsSpellbooksHelper.ELDRITCH_SPELL_POWER);
+            }
             list.add(EffectRegistry.HOLYATTUNEMENT);
-        if (school == SpellSchools.FIRE || (schools != null ? schools.contains(SpellSchools.FIRE) : false))
+        }
+
+        if (school == SpellSchools.FIRE || (schools != null ? schools.contains(SpellSchools.FIRE) : false)) {
+            if (IronsSpellbooksHelper.isIronsSpellbooksLoaded()) {
+                IronsSpellbooksHelper.addIronsSpellbooksSpellPowerAttributeEmpower(EffectRegistry.FIREATTUNEMENT, IronsSpellbooksHelper.FIRE_SPELL_POWER);
+                IronsSpellbooksHelper.addIronsSpellbooksSpellPowerAttributeEmpower(EffectRegistry.FIREATTUNEMENT, IronsSpellbooksHelper.ELDRITCH_SPELL_POWER);
+            }
             list.add(EffectRegistry.FIREATTUNEMENT);
-        if (school == SpellSchools.FROST || (schools != null ? schools.contains(SpellSchools.FROST) : false))
+        }
+
+        if (school == SpellSchools.FROST || (schools != null ? schools.contains(SpellSchools.FROST) : false)) {
+            if (IronsSpellbooksHelper.isIronsSpellbooksLoaded()) {
+                IronsSpellbooksHelper.addIronsSpellbooksSpellPowerAttributeEmpower(EffectRegistry.FROSTATTUNEMENT, IronsSpellbooksHelper.ICE_SPELL_POWER);
+                IronsSpellbooksHelper.addIronsSpellbooksSpellPowerAttributeEmpower(EffectRegistry.FROSTATTUNEMENT, IronsSpellbooksHelper.ELDRITCH_SPELL_POWER);
+            }
             list.add(EffectRegistry.FROSTATTUNEMENT);
-        if (school == SpellSchools.LIGHTNING || (schools != null ? schools.contains(SpellSchools.LIGHTNING) : false))
+        }
+
+        if (school == SpellSchools.LIGHTNING || (schools != null ? schools.contains(SpellSchools.LIGHTNING) : false)) {
+            if (IronsSpellbooksHelper.isIronsSpellbooksLoaded()) {
+                IronsSpellbooksHelper.addIronsSpellbooksSpellPowerAttributeEmpower(EffectRegistry.LIGHTNINGATTUNEMENT, IronsSpellbooksHelper.LIGHTNING_SPELL_POWER);
+                IronsSpellbooksHelper.addIronsSpellbooksSpellPowerAttributeEmpower(EffectRegistry.LIGHTNINGATTUNEMENT, IronsSpellbooksHelper.ELDRITCH_SPELL_POWER);
+            }
             list.add(EffectRegistry.LIGHTNINGATTUNEMENT);
+        }
+        // death knights
+        if (HelperMethods.isEternalAttributesLoaded()) {
+            if (school == SpellSchoolRegistry.BLOOD || (schools != null ? schools.contains(SpellSchoolRegistry.BLOOD) : false)) {
+                if (IronsSpellbooksHelper.isIronsSpellbooksLoaded()) {
+                    IronsSpellbooksHelper.addIronsSpellbooksSpellPowerAttributeEmpower(EffectRegistry.BLOODATTUNEMENT, IronsSpellbooksHelper.BLOOD_SPELL_POWER);
+                    IronsSpellbooksHelper.addIronsSpellbooksSpellPowerAttributeEmpower(EffectRegistry.BLOODATTUNEMENT, IronsSpellbooksHelper.ELDRITCH_SPELL_POWER);
+                }
+                list.add(EffectRegistry.BLOODATTUNEMENT);
+            }
+        }
+
+        if (HelperMethods.isEternalAttributesLoaded()) {
+            if (school == SpellSchoolRegistry.UNHOLY || (schools != null ? schools.contains(SpellSchoolRegistry.UNHOLY) : false)) {
+                if (IronsSpellbooksHelper.isIronsSpellbooksLoaded()) {
+                    IronsSpellbooksHelper.addIronsSpellbooksSpellPowerAttributeEmpower(EffectRegistry.UNHOLYATTUNEMENT, IronsSpellbooksHelper.NATURE_SPELL_POWER);
+                    IronsSpellbooksHelper.addIronsSpellbooksSpellPowerAttributeEmpower(EffectRegistry.UNHOLYATTUNEMENT, IronsSpellbooksHelper.ELDRITCH_SPELL_POWER);
+                }
+                list.add(EffectRegistry.UNHOLYATTUNEMENT);
+            }
+        }
 
         if (!list.isEmpty()) {
 
@@ -89,6 +144,7 @@ public class InitiateAbilities {
             }
         }
     }
+
 
     public static void passiveInitiateAttuned(PlayerEntity player, StatusEffectInstance statusInstance) {
         int duration = SimplySkills.initiateConfig.passiveInitiateAttunedDuration;

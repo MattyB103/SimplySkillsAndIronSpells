@@ -96,6 +96,14 @@
   "effect.simplyskills.lightning_attunement.desc":      "Grants 2% Lightning Spell Power per stack.",
   "effect.simplyskills.lightning_attunement.description":      "Grants 2% Lightning Spell Power per stack.",
 
+  "effect.simplyskills.blood_attunement":               "Blood Attunement",
+  "effect.simplyskills.blood_attunement.desc":      "Grants 2% Blood Spell Power per stack.",
+  "effect.simplyskills.blood_attunement.description":      "Grants 2% Blood Spell Power per stack.",
+
+  "effect.simplyskills.unholy_attunement":               "Unholy Attunement",
+  "effect.simplyskills.unholy_attunement.desc":          "Grants 2% Unholy Spell Power per stack.",
+  "effect.simplyskills.unholy_attunement.description":      "Grants 2% Unholy Spell Power per stack.",
+
   "effect.simplyskills.precision":                      "Precision",
   "effect.simplyskills.precision.desc":                 "Grants 2% Spell critical damage and critical chance per stack.",
   "effect.simplyskills.precision.description":                 "Grants 2% Spell critical damage and critical chance per stack.",

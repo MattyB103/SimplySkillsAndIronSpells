@@ -53,6 +53,8 @@ dependencies {
 
     modImplementation "curse.maven:open-parties-and-claims-636608:${project.openpac_version}"
 
+    modImplementation "curse.maven:eternal-attributes-1181731:${project.eternal_attributes_version}"
+
     modImplementation files("build/libs/dependencies/amethyst_core-1.4.101.20.1.jar")
 
     modImplementation "curse.maven:archers-932359:${project.archers_version}"
