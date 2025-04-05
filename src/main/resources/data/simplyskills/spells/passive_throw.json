@@ -21,15 +21,22 @@
             "bounce": 1
           },
           "client_data": {
-            "travel_particles": [ ],
+            "travel_particles": [
+              {
+                "particle_id": "mycelium",
+                "shape": "SPHERE",
+                "origin": "CENTER",
+                "count": 1.0,
+                "min_speed": 0.12,
+                "max_speed": 0.15
+              }
+            ],
             "model": {
-              "use_held_item": true,
+              "model_id": "simplyskills:projectile/sword",
+              "render": "DEEP",
               "light_emission": "NONE",
-              "rotate_degrees_per_tick": -36.0,
-              "scale": 1,
-              "orientation": "ALONG_MOTION"
-            }
-          },
+              "scale": 0.2
+            },
           "travel_sound_interval": 8,
           "travel_sound": {
             "id": "minecraft:entity.player.attack.strong"
